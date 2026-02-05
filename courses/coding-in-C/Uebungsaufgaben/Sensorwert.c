@@ -1,0 +1,21 @@
+// Sensorwert.c
+#include <stdio.h>
+#include <stdint.h>
+
+int main(void) {
+    unsigned char status = 0xA7; // 0b10100111
+
+    int fehler = (status & 0x80) ? 1 : 0;       // Bit 7
+    int uebertemperatur = (status & 0x40) ? 1 : 0; // Bit 6
+    int unterspannung = (status & 0x20) ? 1 : 0;   // Bit 5
+
+    unsigned int messwert = status & 0x0F; // Bits 0-3
+
+    printf("Status-Byte: 0x%02X\n", status);
+    printf("Fehler: %s\n", fehler ? "ja" : "nein");
+    printf("Übertemperatur: %s\n", uebertemperatur ? "ja" : "nein");
+    printf("Unterspannung: %s\n", unterspannung ? "ja" : "nein");
+    printf("Messwert (Bits 0-3): %u\n", messwert);
+
+    return 0;
+}

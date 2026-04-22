@@ -77,7 +77,9 @@ Write a **generic function** that prints all elements of such a frame.
 
 ### 🟢 Task 3: Weakest Signal Detector
 
-Write a **generic function** that returns the smallest element in an array.
+To detect signal issues, the system must identify the **weakest measurement** in a frame.
+
+Write a **generic function** that returns the smallest value in a frame.
 
 #### Requirements
 

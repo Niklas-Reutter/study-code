@@ -197,7 +197,7 @@ Recorded data:
 
 ---
 
-## 🟡 Section IV: Iterator-Based Processing
+## 🟡 Section III: Iterator-Based Processing
 
 To understand how STL works internally, you now operate directly on iterators.
 
@@ -207,9 +207,10 @@ To understand how STL works internally, you now operate directly on iterators.
 
 #### Requirements
 
-- Create a `std::vector<int>`
-- Traverse using an explicit iterator
-- Do NOT use range-based loops
+- Create a `std::vector<int>` with some values of your choice
+- Loop over each element of the vector one by one using:
+   1. an explicit iterator 
+   2. a for-each loop
 - Print all elements
 
 #### Questions
@@ -219,9 +220,10 @@ Answer as comments:
 - What does `*it` do?
 - What does `++it` do?
 
-#### Context
+#### Note
 
-STL algorithms internally use iterators — understanding them is essential.
+- Add this task to your existing `main()` function 
+- Organize your code into logical sections using comments
 
 ---
 

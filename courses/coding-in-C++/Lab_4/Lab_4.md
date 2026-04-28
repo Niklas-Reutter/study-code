@@ -87,7 +87,7 @@ Think carefully about:
 
 ---
 
-#### 🔹 Part 5 – Comparison Operators
+#### Part 5 – Comparison Operators
 
 Enable comparison between two vectors.
 

@@ -37,7 +37,8 @@ Create a class called Vector2D which contains:
 1. **x** and **y** coordinates (type: double)
 2. a default constructor
 3. a parameterized constructor to set the coordinates
-3. two getter methods for the coordinates
+4. two getter methods for the coordinates
+5. a print function that outputs the coordinates of the vector
 
 ---
 
@@ -57,48 +58,34 @@ Use the ```round``` function of ```<cmath>``` for this purpose:
 
 ---
 
-### Part 3 – Operator Overloading (Member Functions)
+### Part 3 – Operator Overloading
 
 Implement operator overloading for basic vector operations.
 
 Your class should support:
 
 - adding two vectors
-- subtracting two vectors
 - adding another vector to the current object (+=)
-- Test all operators in `main`
+- print a vector using standard output streams
+- scalar multiplication in both orders (vector * scalar and scalar * vector)
+
+Test all operators in `main`
 
 Decide:
 
-- which operators should return new objects
-- which operators should modify the existing object
+- which operator should return a new object or modify the existing object
+- which operator should be defined as member or free function 
 
 ---
 
-### Part 4 – Operator Overloading (Free Functions)
-
-Implement functionality to:
-
-- multiply a vector with a scalar
-- allow multiplication in both orders (vector * scalar and scalar * vector)
-- print a vector using standard output streams
-- Test all operators in `main`
-
-Think carefully about:
-
-- why these operators should not necessarily be member functions
-- how to pass parameters efficiently
-
----
-
-### Part 5 – Comparison Operators
+### Part 4 – Comparison Operators
 
 Enable comparison between two vectors.
 
 - Implement equality and inequality checks
-- Consider the challenges of comparing floating-point values
 - Test the comparison operators in the main function
 
+Consider the challenges of comparing floating-point values
 ---
 
 ## 🟢 Section II: Introduction to dynamic Polymorphism
